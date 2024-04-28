@@ -1,6 +1,4 @@
-'use strict';
-
-function fizzBuzz(value) {
+function fizzBuzz(value: number) {
   if (value % 15 === 0) {
     return 'FizzBuzz';
   }
@@ -13,4 +11,4 @@ function fizzBuzz(value) {
   return String(value);
 }
 
-module.exports = fizzBuzz;
+export default fizzBuzz;

@@ -1,15 +1,13 @@
-'use strict';
+import * as commander from 'commander';
+import * as fs from 'fs';
+import * as path from 'path';
 
-const { Command } = require('commander');
-const fs = require('fs');
-const path = require('path');
+import fizzBuzz from './index.js';
 
-const fizzBuzz = require('.');
-
-const program = new Command();
+const program = new commander.Command();
 
 const pkg = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, './package.json'), 'utf8')
+  fs.readFileSync(path.resolve(__dirname, '../package.json'), 'utf8')
 );
 
 program
@@ -47,6 +45,10 @@ try {
   console.log(result);
   process.exit(0);
 } catch (err) {
-  console.error(`Error: ${ err.message }`);
+  if (err instanceof Error) {
+    console.error(`Error: ${ err.message }`);
+  } else {
+    console.error(`Error: Unexpected error.`);
+  }
   process.exit(1);
 }
