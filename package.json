@@ -1,6 +1,6 @@
 {
   "name": "@houseleg/fizzbuzz",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "FizzBuzz Solver",
   "bin": {
     "fizzbuzz": "./bin/fizzbuzz.js"
