@@ -1,0 +1,35 @@
+'use strict';
+
+const { strictEqual } = require('assert');
+const fizzBuzz = require('.');
+
+strictEqual(fizzBuzz(1), '1');
+strictEqual(fizzBuzz(2), '2');
+strictEqual(fizzBuzz(3), 'Fizz');
+strictEqual(fizzBuzz(4), '4');
+strictEqual(fizzBuzz(5), 'Buzz');
+strictEqual(fizzBuzz(6), 'Fizz');
+strictEqual(fizzBuzz(7), '7');
+strictEqual(fizzBuzz(8), '8');
+strictEqual(fizzBuzz(9), 'Fizz');
+strictEqual(fizzBuzz(10), 'Buzz');
+strictEqual(fizzBuzz(11), '11');
+strictEqual(fizzBuzz(12), 'Fizz');
+strictEqual(fizzBuzz(13), '13');
+strictEqual(fizzBuzz(14), '14');
+strictEqual(fizzBuzz(15), 'FizzBuzz');
+strictEqual(fizzBuzz(16), '16');
+strictEqual(fizzBuzz(17), '17');
+strictEqual(fizzBuzz(18), 'Fizz');
+strictEqual(fizzBuzz(19), '19');
+strictEqual(fizzBuzz(20), 'Buzz');
+strictEqual(fizzBuzz(21), 'Fizz');
+strictEqual(fizzBuzz(22), '22');
+strictEqual(fizzBuzz(23), '23');
+strictEqual(fizzBuzz(24), 'Fizz');
+strictEqual(fizzBuzz(25), 'Buzz');
+strictEqual(fizzBuzz(26), '26');
+strictEqual(fizzBuzz(27), 'Fizz');
+strictEqual(fizzBuzz(28), '28');
+strictEqual(fizzBuzz(29), '29');
+strictEqual(fizzBuzz(30), 'FizzBuzz');

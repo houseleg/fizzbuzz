@@ -1,0 +1,19 @@
+{
+  "name": "@houseleg/fizzbuzz",
+  "version": "0.1.0",
+  "description": "FizzBuzz Solver",
+  "bin": {
+    "fizzbuzz": "./bin/fizzbuzz.js"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "node test",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [],
+  "author": "Kosuke Fujita <kosuke.fujita979@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0"
+  }
+}
